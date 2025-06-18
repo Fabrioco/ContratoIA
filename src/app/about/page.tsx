@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <main className="flex flex-col gap-8 h-screen w-screen items-center justify-between text-center text-purple-700 p-4">
+    <main className="flex flex-col gap-8 w-screen items-center justify-between text-center text-purple-700 p-4">
       <section
         id="inicio"
         aria-label="Missão do projeto"
