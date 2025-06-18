@@ -64,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${montserrat.className} antialiased`}
+        className={`${montserrat.variable} ${montserrat.className} antialiased flex flex-col h-screen w-screen justify-between`}
       >
         <Header />
         {children}
