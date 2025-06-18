@@ -3,6 +3,7 @@ import {
   PenIcon,
   ShieldCheckIcon,
 } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -14,17 +15,22 @@ export default function HomePage() {
           personalizados e seguros em minutos.
         </p>
         <article role="group" aria-label="Opções para criar um contrato">
-          <button
+          <Link
+            href="/chat"
             aria-label="Criar contrato com ajuda da IA (Chat)"
             role="link"
           >
             <ClockIcon size={32} weight="bold" color="white" />
             Criar contrato com ajuda da IA (Chat)
-          </button>
-          <button aria-label="Preencher formulário manual" role="link">
+          </Link>
+          <Link
+            href="/form"
+            aria-label="Preencher formulário manual"
+            role="link"
+          >
             <PenIcon size={32} weight="bold" color="white" />
             Preencher formulário manual
-          </button>
+          </Link>
         </article>
       </section>
 
